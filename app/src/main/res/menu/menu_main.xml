@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.safelink.MainActivity">
+    
+    <item
+        android:id="@+id/action_device_discovery"
+        android:orderInCategory="100"
+        android:title="장치 검색"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/action_sensor_monitor"
+        android:orderInCategory="101"
+        android:title="센서 모니터링"
+        android:icon="@android:drawable/ic_menu_view"
+        app:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/action_test_data"
+        android:orderInCategory="102"
+        android:title="테스트 데이터"
+        android:icon="@android:drawable/ic_menu_send"
+        app:showAsAction="never" />
+    
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="103"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>

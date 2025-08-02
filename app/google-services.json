@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "182763695958",
+    "firebase_url": "https://my-safelink-app-default-rtdb.firebaseio.com",
+    "project_id": "my-safelink-app",
+    "storage_bucket": "my-safelink-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182763695958:android:9c7be4fc3b1df30aaef0f7",
+        "android_client_info": {
+          "package_name": "com.example.safelink"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4vVfepkri_Y0iKMc4apOBBigyiiDIN5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

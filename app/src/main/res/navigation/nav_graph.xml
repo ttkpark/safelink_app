@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/customerConsentFragment">
+
+    <fragment
+        android:id="@+id/customerConsentFragment"
+        android:name="com.example.safelink.ui.CustomerConsentFragment"
+        android:label="고객 동의"
+        tools:layout="@layout/fragment_customer_consent">
+
+        <action
+            android:id="@+id/action_customerConsentFragment_to_clientLoginFragment"
+            app:destination="@id/clientLoginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/clientLoginFragment"
+        android:name="com.example.safelink.ui.ClientLoginFragment"
+        android:label="고객 로그인"
+        tools:layout="@layout/fragment_client_login">
+
+        <action
+            android:id="@+id/action_clientLoginFragment_to_clientMainFragment"
+            app:destination="@id/clientMainFragment" />
+            
+        <action
+            android:id="@+id/action_clientLoginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.safelink.ui.SignupFragment"
+        android:label="회원가입"
+        tools:layout="@layout/fragment_signup" />
+
+    <fragment
+        android:id="@+id/clientMainFragment"
+        android:name="com.example.safelink.ui.ClientMainFragment"
+        android:label="고객 메인"
+        tools:layout="@layout/fragment_client_main">
+
+        <action
+            android:id="@+id/action_clientMainFragment_to_deviceDiscoveryFragment"
+            app:destination="@id/deviceDiscoveryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/deviceDiscoveryFragment"
+        android:name="com.example.safelink.ui.DeviceDiscoveryFragment"
+        android:label="장치 검색"
+        tools:layout="@layout/fragment_device_discovery">
+
+        <action
+            android:id="@+id/action_deviceDiscoveryFragment_to_sensorMonitorFragment"
+            app:destination="@id/sensorMonitorFragment" />
+    </fragment>
+    
+    <fragment
+        android:id="@+id/sensorMonitorFragment"
+        android:name="com.example.safelink.ui.SensorMonitorFragment"
+        android:label="센서 모니터링"
+        tools:layout="@layout/fragment_sensor_monitor">
+
+        <action
+            android:id="@+id/action_sensorMonitorFragment_to_deviceDiscoveryFragment"
+            app:destination="@id/deviceDiscoveryFragment" />
+    </fragment>
+</navigation>
